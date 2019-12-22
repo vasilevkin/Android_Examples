@@ -1,8 +1,11 @@
 package com.vasilevkin.helloworld
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -46,5 +49,15 @@ class MainActivity : AppCompatActivity() {
         super.onDestroy()
 
         Log.d(msg, "The onDestroy() event")
+    }
+
+    // Service
+    fun startService(view: View) {
+        startService(Intent(baseContext, MyService::class.java))
+    }
+
+    // Method to stop the service
+    fun stopService(view: View) {
+        stopService(Intent(baseContext, MyService::class.java))
     }
 }
