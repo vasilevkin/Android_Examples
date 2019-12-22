@@ -15,7 +15,7 @@
 <!--            android:exported="true">-->
 
             <intent-filter>
-                <action android:name="com.tutorialspoint.CUSTOM_INTENT"></action>
+                <action android:name="com.vasilevkin.CUSTOM_INTENT"></action>
             </intent-filter>
         </receiver>
 

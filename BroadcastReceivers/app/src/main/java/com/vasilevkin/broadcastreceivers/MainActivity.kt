@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
     // broadcast a custom intent.
     fun broadcastIntent(view: View) {
         val intent = Intent()
-        intent.action = "com.tutorialspoint.CUSTOM_INTENT"
+        intent.action = "com.vasilevkin.CUSTOM_INTENT"
         sendBroadcast(intent)
     }
 
